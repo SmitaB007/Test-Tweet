@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+
+{% if results %}
+{% for x in results  %}
+<h2>Username :- {{x.user.username}}</h2>
+<h2>Tweet :- {{x.text}}</h2>
+{% endfor %}
+{% endif %}
+{% endblock %}
